@@ -1,5 +1,7 @@
 ﻿using System;
 using Avalonia;
+using Avalonia.ReactiveUI;
+using ReactiveUI;
 
 namespace CSfitter
 {
@@ -17,6 +19,7 @@ namespace CSfitter
             => AppBuilder.Configure<App>()
                 .UsePlatformDetect()
                 .WithInterFont()
-                .LogToTrace();
+                .LogToTrace()
+                .UseReactiveUI();
     }
 }
