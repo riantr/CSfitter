@@ -37,7 +37,7 @@ namespace CSfitter.ViewModels
         private async Task LoadColorSpacesAsync()
         {
             ColorSpaces.Clear();
-            ColorSpaceRepository colorSpaces = await _colorSpace.GetColorSpacesAsync(); 
+            var colorSpaces = await _colorSpace.GetColorSpacesAsync(); 
             foreach (var colorSpace in colorSpaces)
             {
                 ColorSpaces.Add(colorSpace);
